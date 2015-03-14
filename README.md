@@ -1,9 +1,8 @@
-This plugin is experimental, it may not work and it may destoy your pi, so be careful!
+This plugin is experimental, it may not work and it may damage your pi, so be careful!
 
 You will need to install and run pigpiod http://abyz.co.uk/rpi/pigpio/index.html in order to use this module. 
 
-What is this?
-============
+## What is this?
 
 This simple plugin allows you to connect a button and two LEDs to Raspberry Pi and Octoprint. It lets you start/pause prints using a button connected to Raspberry pi GPIO pins. 
 
@@ -12,8 +11,7 @@ When you first press the button, it will tell octoprint to start printing. In or
 While printer is running, LED1 will flash. If you press the button while printer is printing, it will go into pause state, and LED2 will start flashing (LED1 will turn off). If you press the button again, printer will continue printing, and LED1 will continue flashing...
 
 
-GPIO
-====
+## GPIO
 
 You will need to configure 1 pin as input for button and 2 pins as output for LEDs. This can be done using settings panel in Octoprint. Look for a section "io" in navigation menu under plugins. This plugin uses pigpiod library, which uses BCM numbering, so make sure you assign the correct pin!
 If you are not sure which pin you connected your button and LEDs, install wiringPi and run:
@@ -48,10 +46,10 @@ $ gpio readall
  
  Numbers will be different depending on which version of Pi you are using, so do not use table above as reference!
  
- Installation
- ============
+## Installation
+
  
-run
+run:
 ```
 pip install https://github.com/mickbalaban/OctoPrint-IO/archive/master.zip
 ```
