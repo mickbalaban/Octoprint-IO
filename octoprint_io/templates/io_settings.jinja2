@@ -1,0 +1,38 @@
+<!--
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">{{ _('OI') }}</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.io.mick">
+        </div>
+    </div>
+</form>
+-->
+<h4>IO Plugin</h4>
+
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="io_button_pin_number">Button pin</label>
+    <div class="controls">
+      <input type="number" id="io_button_pin_number" data-bind="value: settings.plugins.io.button">
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <label class="control-label" for="io_led1_pin_number">LED1 pin</label>
+    <div class="controls">
+      <input type="number" data-bind="value: settings.plugins.io.led1" id="io_led1_pin_number">
+    </div>
+  </div>
+    
+    
+  <div class="control-group">
+    <label class="control-label" for="io_led1_pin_number">LED2 pin</label>
+    <div class="controls">
+      <input type="number" id="io_led2_pin_number" data-bind="value: settings.plugins.io.led2">
+    </div>
+  </div>
+    
+
+</form>
+
