@@ -1,4 +1,4 @@
-Button experiment or printrbot
+Button experiment for printrbot
 =========================
 
 This plugin is exprimental, it may not work and it may destoy your pi, so be careful!
